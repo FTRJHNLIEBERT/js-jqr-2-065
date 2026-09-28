@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung Statistik - T3_065</title>
+    <!-- Link Bootstrap 5 via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menghubungkan ke file JS sesuai penamaan tugas -->
+    <script src="T3_065.js" defer></script>
+</head>
+<body class="bg-light">
+
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-5">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4 class="mb-0">Min, Max, & Rata-rata</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        
+                        <div class="mb-3">
+                            <label for="inputArray" class="form-label font-weight-bold">Masukkan Angka (pisahkan dengan koma):</label>
+                            <input type="text" id="inputArray" class="form-control" placeholder="Contoh: 10, 20, 30, 40, 50">
+                            <small class="text-muted">Gunakan tanda koma (,) sebagai pemisah.</small>
+                        </div>
+
+                        <button id="btnHitung" class="btn btn-primary btn-lg w-100 shadow-sm">
+                            HITUNG SEKARANG
+                        </button>
+
+                        <!-- Tempat Menampilkan Hasil -->
+                        <div id="boxHasil" class="mt-4 p-3 bg-white border rounded d-none">
+                            <h5 class="text-muted mb-3 border-bottom pb-2">Hasil Perhitungan:</h5>
+                            <div id="hasil" class="text-dark">
+                                <!-- Hasil akan diisi oleh JS -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <p class="text-center text-muted mt-3 small">&copy; 2026 - T3_065</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
